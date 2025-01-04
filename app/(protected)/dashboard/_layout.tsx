@@ -1,5 +1,5 @@
 import React from 'react'
-import StoreHeader from '@/components/headers/StoreHeader'
+import DashboardHeader from '@/components/headers/DashboardHeader'
 import { Stack } from 'expo-router'
 import CommonHeader from '@/components/headers/CommonHeader'
 
@@ -14,7 +14,7 @@ export default function _layout() {
         } 
       })} 
     >
-      <Stack.Screen name="index" options={{ header: () => <StoreHeader /> }} />
+      <Stack.Screen name="index" options={{ header: () => <DashboardHeader /> }} />
     </Stack>
   )
 }

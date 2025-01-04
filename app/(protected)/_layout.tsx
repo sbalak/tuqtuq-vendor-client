@@ -6,8 +6,8 @@ export default function _layout() {
   return (
     <LocationProvider>
       <Stack>
+        <Stack.Screen name="dashboard" options={{ headerShown: false }} />
         <Stack.Screen name="settings" options={{ headerShown: false }} />
-        <Stack.Screen name="store" options={{ headerShown: false }} />
       </Stack>
     </LocationProvider>
   )

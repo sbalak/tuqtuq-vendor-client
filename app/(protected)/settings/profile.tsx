@@ -20,7 +20,7 @@ export default function profile() {
   
   const loadUser = async() => {
     try {
-      const response = await axios.get(`${process.env.EXPO_PUBLIC_API_URL}/user/details?userId=${authState.userId}`);
+      const response = await axios.get(`${process.env.EXPO_PUBLIC_API_URL}/staff/details?staffId=${authState.userId}`);
       setUser(response.data);
       setFirstName(response.data.firstName);
       setLastName(response.data.lastName);
@@ -35,7 +35,7 @@ export default function profile() {
         Alert.alert('Error!', "Please enter your first & last name");
       }
       else{
-        const response = await axios.post(`${process.env.EXPO_PUBLIC_API_URL}/user/update?userId=${authState.userId}&firstName=${firstName}&lastName=${lastName}`);
+        const response = await axios.post(`${process.env.EXPO_PUBLIC_API_URL}/staff/update?staffId=${authState.userId}&firstName=${firstName}&lastName=${lastName}`);
         router.back();
       }      
     } catch (error) {

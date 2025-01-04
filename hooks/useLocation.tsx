@@ -41,7 +41,7 @@ const LocationProvider: React.FC<Props> = ({ children }) => {
               latitude: geocode.coords.latitude
             });
             
-            const response = await axios.post(`${process.env.EXPO_PUBLIC_API_URL}/User/SetCoordinates?userId=${authState.userId}&latitude=${geocode.coords.latitude}&longitude=${geocode.coords.longitude}`); 
+            const response = await axios.post(`${process.env.EXPO_PUBLIC_API_URL}/Staff/SetCoordinates?staffId=${authState.userId}&latitude=${geocode.coords.latitude}&longitude=${geocode.coords.longitude}`); 
             
             setLocationState({
                 locality: address[0].district,

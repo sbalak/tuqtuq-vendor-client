@@ -18,7 +18,7 @@ export default function index() {
   
   const loadUser = async() => {
     try {
-      const response = await axios.get(`${process.env.EXPO_PUBLIC_API_URL}/user/details?userId=${authState.userId}`);
+      const response = await axios.get(`${process.env.EXPO_PUBLIC_API_URL}/staff/details?staffId=${authState.userId}`);
       setUser(response.data);
     }
     catch(error) {

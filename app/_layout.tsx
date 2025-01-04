@@ -37,7 +37,7 @@ const RootLayout = () => {
     }
     else {
       if (authState.authenticated) {
-        router.replace('/store'); 
+        router.replace('/dashboard'); 
       }
       else {
         router.replace('/login');

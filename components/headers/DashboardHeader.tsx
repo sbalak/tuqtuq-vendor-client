@@ -7,7 +7,7 @@ import { useLocation } from '@/hooks/useLocation'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { common } from '@/constants/Styles'
 
-const StoreHeader = () => {
+const DashboardHeader = () => {
     const { top } = useSafeAreaInsets();
     const { locationState, setLocality} = useLocation();
 
@@ -18,7 +18,7 @@ const StoreHeader = () => {
               <Image style={styles.locator} source={require('@/assets/images/location.png')} />
           </TouchableOpacity>
           <TouchableOpacity style={styles.titleContainer} onPress={setLocality}>
-              <Text style={[common.defaultTitle, {color: Colors.LightGrey}]}>Pickup • Now</Text>
+              <Text style={[common.defaultTitle, {color: Colors.LightGrey}]}>Peekay Coffee</Text>
               <Text style={common.defaultTitle}>{locationState.locality}</Text>
           
           </TouchableOpacity>
@@ -32,7 +32,7 @@ const StoreHeader = () => {
     )
 }
 
-export default StoreHeader;
+export default DashboardHeader;
 
 const styles = StyleSheet.create({
   container: {
