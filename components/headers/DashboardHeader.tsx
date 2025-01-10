@@ -22,11 +22,11 @@ const DashboardHeader = () => {
               <Text style={common.defaultTitle}>{locationState.locality}</Text>
           
           </TouchableOpacity>
-          <TouchableOpacity style={styles.searchButton} onPress={() => router.push('/store/list')}>
-              <Ionicons name='search' size={20} color={Colors.Primary} />
+          <TouchableOpacity style={styles.statusButton} onPress={() => router.push('/store/list')}>
+              <Text style={[common.defaultText, {color: Colors.White}]}>Closed</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.profileButton} onPress={() => router.push('/settings')}>
-              <Ionicons name='person' size={20} color={Colors.Primary} />
+              <Ionicons name='settings-outline' size={20} color={Colors.Primary} />
           </TouchableOpacity>
         </View>
     )
@@ -63,11 +63,14 @@ const styles = StyleSheet.create({
       flex: 1,
       paddingTop:7
   },
-  searchButton: {
-    backgroundColor: Colors.Secondary,
-      padding: 10,
-      marginTop:7,
-      borderRadius: 50
+  statusButton: {
+    backgroundColor: '#F69697', //#A3C585
+    padding: 10,
+    marginTop:7,
+    width:70,
+    borderRadius: 5,
+    flexDirection: 'row',
+    justifyContent: 'space-around'
   },
   profileButton: {
       backgroundColor: Colors.Secondary,
