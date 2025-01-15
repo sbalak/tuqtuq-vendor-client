@@ -3,6 +3,7 @@ import React from 'react'
 import { common } from '@/constants/Styles';
 import { Ionicons, MaterialIcons } from '@expo/vector-icons';
 import { Colors } from '@/constants/Colors';
+import { router } from 'expo-router';
 
 export default function dashboard() {  
   return (
@@ -35,22 +36,22 @@ export default function dashboard() {
         </View>
 
         <View style={styles.dashboardContainer}>
-          <TouchableOpacity style={styles.dashboardTile}>
+          <TouchableOpacity style={styles.dashboardTile} onPress={() => router.push('/order/all')}>
             <Text style={[common.defaultHeading, styles.dashboardTileText]}><Ionicons name="sparkles-outline" size={12} color="black" /> ALL</Text>
             <Text style={common.text}>3</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.dashboardTile}>
+          <TouchableOpacity style={styles.dashboardTile} onPress={() => router.push('/order/new')}>
             <Text style={[common.defaultHeading, styles.dashboardTileText]}><Ionicons name="paper-plane-outline" size={12} color="black" /> NEW</Text>
             <Text style={common.text}>9</Text>
           </TouchableOpacity>
         </View>
 
         <View style={styles.dashboardContainer}>
-          <TouchableOpacity style={styles.dashboardTile}>
+          <TouchableOpacity style={styles.dashboardTile} onPress={() => router.push('/order/preparing')}>
             <Text style={[common.defaultHeading, styles.dashboardTileText]}><Ionicons name="stopwatch-outline" size={12} color="black" /> PREPARING</Text>
             <Text style={common.text}>455</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.dashboardTile}>
+          <TouchableOpacity style={styles.dashboardTile} onPress={() => router.push('/order/pending')}>
             <Text style={[common.defaultHeading, styles.dashboardTileText]}><Ionicons name="warning-outline" size={12} color="black" /> PENDING</Text>
             <Text style={common.text}>0</Text>
           </TouchableOpacity>
@@ -84,24 +85,24 @@ export default function dashboard() {
         <View style={styles.divider}></View>
 
         <View style={styles.commonContainer}>
-          <TouchableOpacity style={{width:'66.66%'}}>
+          <TouchableOpacity style={{width:'66.66%'}} onPress={() => router.navigate('/menu')}>
             <Text style={common.defaultHeading}><Ionicons name="fast-food-outline" size={14} color="black" /> FOOD ITEMS</Text>
-            <Text style={common.text}>2455 available & 1000 unavailable</Text>
+            <Text style={common.text}>245 available & 100 unavailable</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={{width:'33.33%'}}>
+          <TouchableOpacity style={{width:'33.33%'}} onPress={() => router.navigate('/category')}>
             <Text style={common.defaultHeading}><Ionicons name="bookmarks-outline" size={14} color="black" /> CATEGORIES</Text>
             <Text style={common.text}>5 active</Text>
           </TouchableOpacity>
         </View>
 
         <View style={styles.commonContainer}>
-          <TouchableOpacity style={{width:'45%'}}>
+          <TouchableOpacity style={{width:'45%'}} onPress={() => router.navigate('/transactions')}>
             <Text style={common.defaultHeading}><Ionicons name="list" size={14} color="black" /> TRANSACTIONS</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={{width:'30%'}}>
+          <TouchableOpacity style={{width:'30%'}} onPress={() => router.navigate('/offers')}>
             <Text style={common.defaultHeading}><Ionicons name="ticket" size={14} color="black" /> OFFERS</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={{width:'25%'}}>
+          <TouchableOpacity style={{width:'25%'}} onPress={() => router.navigate('/ratings')}>
             <Text style={common.defaultHeading}><Ionicons name="star" size={14} color="black" /> RATINGS</Text>
           </TouchableOpacity>
         </View>
