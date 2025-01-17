@@ -31,28 +31,28 @@ export default function dashboard() {
         <View style={styles.titleContainer}>
           <View style={styles.title}>
             <Ionicons name="apps-outline" size={24} color={Colors.Primary} /> 
-            <Text style={common.heading}>Orders Today</Text>
+            <Text style={common.title}>Orders Today</Text>
           </View>
         </View>
 
         <View style={styles.dashboardContainer}>
           <TouchableOpacity style={styles.dashboardTile} onPress={() => router.push('/order/all')}>
-            <Text style={[common.defaultHeading, styles.dashboardTileText]}><Ionicons name="sparkles-outline" size={12} color="black" /> ALL</Text>
+            <Text style={[common.defaultTitle, styles.dashboardTileText]}><Ionicons name="sparkles-outline" size={12} color="black" /> ALL</Text>
             <Text style={common.text}>3</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.dashboardTile} onPress={() => router.push('/order/new')}>
-            <Text style={[common.defaultHeading, styles.dashboardTileText]}><Ionicons name="paper-plane-outline" size={12} color="black" /> NEW</Text>
+            <Text style={[common.defaultTitle, styles.dashboardTileText]}><Ionicons name="paper-plane-outline" size={12} color="black" /> NEW</Text>
             <Text style={common.text}>9</Text>
           </TouchableOpacity>
         </View>
 
         <View style={styles.dashboardContainer}>
           <TouchableOpacity style={styles.dashboardTile} onPress={() => router.push('/order/preparing')}>
-            <Text style={[common.defaultHeading, styles.dashboardTileText]}><Ionicons name="stopwatch-outline" size={12} color="black" /> PREPARING</Text>
+            <Text style={[common.defaultTitle, styles.dashboardTileText]}><Ionicons name="stopwatch-outline" size={12} color="black" /> PREPARING</Text>
             <Text style={common.text}>455</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.dashboardTile} onPress={() => router.push('/order/pending')}>
-            <Text style={[common.defaultHeading, styles.dashboardTileText]}><Ionicons name="warning-outline" size={12} color="black" /> PENDING</Text>
+            <Text style={[common.defaultTitle, styles.dashboardTileText]}><Ionicons name="warning-outline" size={12} color="black" /> PENDING</Text>
             <Text style={common.text}>0</Text>
           </TouchableOpacity>
         </View>
@@ -60,24 +60,24 @@ export default function dashboard() {
         <View style={styles.titleContainer}>
           <View style={styles.title}>
             <Ionicons name="stats-chart" size={24} color={Colors.Secondary} />
-            <Text style={common.heading}>Revenue Insights</Text>
+            <Text style={common.title}>Revenue Insights</Text>
           </View>
         </View>
 
         <View style={styles.commonContainer}>
           <View style={{width: '33.33%'}}>
-            <Text style={[common.defaultHeading, {marginBottom: 5}]}>TODAY</Text>
-            <Text style={[common.defaultHeading, {color: Colors.LightGrey, marginBottom:5 }]}>₹ 4,55,000</Text>
+            <Text style={[common.defaultTitle, {marginBottom: 5}]}>TODAY</Text>
+            <Text style={[common.defaultTitle, {color: Colors.LightGrey, marginBottom:5 }]}>₹ 4,55,000</Text>
             <Text style={common.text}>778 orders</Text>
           </View>
           <View style={{width: '33.33%'}}>
-            <Text style={[common.defaultHeading, {marginBottom: 5}]}>THIS WEEK</Text>
-            <Text style={[common.defaultHeading, {color: Colors.LightGrey, marginBottom:5 }]}>₹ 14,55,000</Text>
+            <Text style={[common.defaultTitle, {marginBottom: 5}]}>THIS WEEK</Text>
+            <Text style={[common.defaultTitle, {color: Colors.LightGrey, marginBottom:5 }]}>₹ 14,55,000</Text>
             <Text style={common.text}>56,778 orders</Text>
           </View>
           <View style={{width: '33.33%'}}>
-            <Text style={[common.defaultHeading, {marginBottom: 5}]}>THIS MONTH</Text>
-            <Text style={[common.defaultHeading, {color: Colors.LightGrey, marginBottom:5 }]}>₹ 24,55,000</Text>
+            <Text style={[common.defaultTitle, {marginBottom: 5}]}>THIS MONTH</Text>
+            <Text style={[common.defaultTitle, {color: Colors.LightGrey, marginBottom:5 }]}>₹ 24,55,000</Text>
             <Text style={common.text}>7,86,222 orders</Text>
           </View>
         </View>
@@ -86,24 +86,24 @@ export default function dashboard() {
 
         <View style={styles.commonContainer}>
           <TouchableOpacity style={{width:'66.66%'}} onPress={() => router.navigate('/menu')}>
-            <Text style={common.defaultHeading}><Ionicons name="fast-food-outline" size={14} color="black" /> FOOD ITEMS</Text>
+            <Text style={common.defaultTitle}><Ionicons name="fast-food-outline" size={14} color="black" /> FOOD ITEMS</Text>
             <Text style={common.text}>245 available & 100 unavailable</Text>
           </TouchableOpacity>
           <TouchableOpacity style={{width:'33.33%'}} onPress={() => router.navigate('/category')}>
-            <Text style={common.defaultHeading}><Ionicons name="bookmarks-outline" size={14} color="black" /> CATEGORIES</Text>
+            <Text style={common.defaultTitle}><Ionicons name="bookmarks-outline" size={14} color="black" /> CATEGORIES</Text>
             <Text style={common.text}>5 active</Text>
           </TouchableOpacity>
         </View>
 
         <View style={styles.commonContainer}>
           <TouchableOpacity style={{width:'45%'}} onPress={() => router.navigate('/transactions')}>
-            <Text style={common.defaultHeading}><Ionicons name="list" size={14} color="black" /> TRANSACTIONS</Text>
+            <Text style={common.defaultTitle}><Ionicons name="list" size={14} color="black" /> TRANSACTIONS</Text>
           </TouchableOpacity>
           <TouchableOpacity style={{width:'30%'}} onPress={() => router.navigate('/offers')}>
-            <Text style={common.defaultHeading}><Ionicons name="ticket" size={14} color="black" /> OFFERS</Text>
+            <Text style={common.defaultTitle}><Ionicons name="ticket" size={14} color="black" /> OFFERS</Text>
           </TouchableOpacity>
           <TouchableOpacity style={{width:'25%'}} onPress={() => router.navigate('/ratings')}>
-            <Text style={common.defaultHeading}><Ionicons name="star" size={14} color="black" /> RATINGS</Text>
+            <Text style={common.defaultTitle}><Ionicons name="star" size={14} color="black" /> RATINGS</Text>
           </TouchableOpacity>
         </View>
         

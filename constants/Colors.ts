@@ -3,6 +3,12 @@ export const Colors = {
   Secondary: '#EAC784',
   Tertiary: '#B2D8D8',
 
+  Blue: '#337AB7',
+  LightBlue: '#5BC0DE',
+  Green: '#5CB85C',
+  Amber: '#F0AD4E',
+  Red: '#D9534F',
+
   White: '#FFFFFF',
   LighterGrey: '#F5F5F5',
   LightGrey: '#666666',  
