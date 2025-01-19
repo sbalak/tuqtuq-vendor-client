@@ -137,7 +137,7 @@ const brand = StyleSheet.create({
   },
   title: {
     color: Colors.Black,
-    fontFamily: 'barcelona',
+    fontFamily: 'WinterHalf',
     fontSize: 80,
   }
 });
