@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "vendor-client",
-    "slug": "vendor-client",
+    "name": "tuqtuq-vendor-client",
+    "slug": "tuqtuq-vendor-client",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",

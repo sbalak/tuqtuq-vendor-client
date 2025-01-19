@@ -108,7 +108,7 @@ export default function dashboard() {
         </View>
         
         <View style={brand.container}>
-          <Text style={brand.title}>{"{"}takkun{"}"}</Text>
+          <Text style={brand.title}>{"{"}TuqTuq{"}"}</Text>
         </View>
       </ScrollView>
     </SafeAreaView>
