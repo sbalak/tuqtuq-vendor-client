@@ -18,12 +18,12 @@ const DashboardHeader = () => {
               <Image style={styles.locator} source={require('@/assets/images/location.png')} />
           </TouchableOpacity>
           <TouchableOpacity style={styles.titleContainer} onPress={setLocality}>
-              <Text style={[common.defaultHeading, {color: Colors.LightGrey}]}>Peekay Coffee</Text>
-              <Text style={common.defaultHeading}>{locationState.locality}</Text>
+              <Text style={{fontFamily: common.defaultHeading, color: Colors.LightGrey}}>Peekay Coffee</Text>
+              <Text style={{fontFamily: common.defaultHeading}}>{locationState.locality}</Text>
           
           </TouchableOpacity>
           <TouchableOpacity style={styles.statusButton} onPress={() => router.push('/store/list')}>
-              <Text style={[common.defaultText, {color: Colors.White}]}>Closed</Text>
+              <Text style={{fontFamily: common.defaultText, color: Colors.White}}>Closed</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.profileButton} onPress={() => router.push('/settings')}>
               <Ionicons name='settings-outline' size={20} color={Colors.Primary} />

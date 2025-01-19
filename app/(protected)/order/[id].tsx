@@ -39,12 +39,12 @@ export default function index() {
                       <TouchableOpacity style={[styles.typeTab, {backgroundColor: Colors.Primary}]} onPress={() => {
                         setType(item)
                       }}>
-                        <Text style={[common.defaultHeading, {color: Colors.White}]}>{type.toUpperCase()}</Text>
+                        <Text style={{fontFamily: common.defaultHeading, color: Colors.White}}>{type.toUpperCase()}</Text>
                       </TouchableOpacity> : 
                       <TouchableOpacity style={[styles.typeTab, {backgroundColor: Colors.White}]} onPress={() => {
                         setType(item)
                       }}>
-                        <Text style={common.defaultHeading}>{item.toUpperCase()}</Text>
+                        <Text style={{fontFamily: common.defaultHeading}}>{item.toUpperCase()}</Text>
                       </TouchableOpacity>
                   )}
                   style={{marginVertical: 10}}
@@ -55,18 +55,18 @@ export default function index() {
                       scrollEnabled={false} 
                       renderItem={({item, index})=>(
                         <View style={styles.orderContainer}>
-                          <Text style={[item.status === 'New' ? common.defaultTitle : common.text, styles.status, styles.pending]}>PENDING</Text>                          
+                          <Text style={[item.status === 'New' ? common.title : common.text, styles.status, styles.pending]}>PENDING</Text>                          
                           <View style={{display:'flex', flexDirection: 'row', justifyContent: 'space-between', marginBottom:10}}>
-                            <Text style={common.defaultHeading}>ID: 5674432</Text>
-                            <Text style={common.defaultHeading}>06:30 PM</Text>
+                            <Text style={{fontFamily: common.defaultHeading}}>ID: 5674432</Text>
+                            <Text style={{fontFamily: common.defaultHeading}}>06:30 PM</Text>
                           </View>
                           <Text style={[common.text, {marginBottom:10}]}>1x Coffee, 2x Tea, 1x Lemonade 1x Coffee, 2x Tea, 1x Lemonade 1x Coffee, 2x Tea, 1x Lemonade 1x Coffee, 2x Tea, 1x Lemonade 1x Coffee, 2x Tea</Text>
-                          <Text style={common.defaultHeading}>Total Bill: {item.totalAmount}</Text>
+                          <Text style={{fontFamily: common.defaultHeading}}>Total Bill: {item.totalAmount}</Text>
                           <View style={{height:1, backgroundColor: Colors.LighterGrey, marginVertical:10}}></View>
 
                           <View style={{flexDirection: 'row'}}>
-                            <Text style={[common.defaultText, {backgroundColor: '#337ab7', color: 'white', borderRadius: 5, textAlign: 'center', width:100, paddingVertical:5}]}><Ionicons name="checkmark"  /> Accept</Text>
-                            <Text style={[common.defaultText, {backgroundColor: '#d9534f', color: 'white', borderRadius: 5, textAlign: 'center', width:100, paddingVertical:5, marginLeft:10}]}><Ionicons name="close" /> Reject</Text>
+                            <Text style={{fontFamily: common.defaultText, backgroundColor: '#337ab7', color: 'white', borderRadius: 5, textAlign: 'center', width:100, paddingVertical:5}}><Ionicons name="checkmark"  /> Accept</Text>
+                            <Text style={{fontFamily: common.defaultText, backgroundColor: '#d9534f', color: 'white', borderRadius: 5, textAlign: 'center', width:100, paddingVertical:5, marginLeft:10}}><Ionicons name="close" /> Reject</Text>
                           </View>
                         </View>
                       )}
