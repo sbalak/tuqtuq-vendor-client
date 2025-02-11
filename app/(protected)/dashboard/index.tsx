@@ -108,7 +108,7 @@ export default function dashboard() {
         </View>
         
         <View style={brand.container}>
-          <Text style={brand.title}>{"{"}TuqTuq{"}"}</Text>
+          <Text style={brand.title}>TuqTuq</Text>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -119,8 +119,7 @@ const styles = StyleSheet.create({
   commonContainer: {
     flexDirection: 'row', 
     padding:10, 
-    backgroundColor: 
-    Colors.White, 
+    backgroundColor: Colors.White, 
     marginBottom: 10, 
     borderRadius:5 
   },
@@ -200,6 +199,6 @@ const brand = StyleSheet.create({
   title: {
     color: Colors.White,
     fontFamily: 'WinterHalf',
-    fontSize: 80,
+    fontSize: 80
   }
 });
