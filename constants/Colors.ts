@@ -9,6 +9,8 @@ export const Colors = {
   Amber: '#F0AD4E',
   Red: '#D9534F',
 
+  Gold: '#FFB300',
+
   White: '#FFFFFF',
   LighterGrey: '#F5F5F5',
   LightGrey: '#666666',  

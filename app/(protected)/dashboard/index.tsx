@@ -186,6 +186,7 @@ const styles = StyleSheet.create({
   },
   textInputBox: {
     width: "100%",
+    textAlign:'center',
     fontSize: 14
   }
 })
