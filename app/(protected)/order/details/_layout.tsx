@@ -6,7 +6,6 @@ export default function _layout() {
   return (
     <Stack>
       <Stack.Screen name="[id]" options={{ header: (props) => <CommonHeader props={props} {...props} /> }} />
-      <Stack.Screen name="details" options={{ headerShown: false }} />
     </Stack>
   )
 }
